@@ -21,6 +21,24 @@ For the intended taxonomy of modules not yet built, see
 | `elm.leave_request.create` | Create a leave request | `Employee` |
 | `elm.leave_request.update` | Withdraw or request cancellation of a leave request | `Employee` |
 
+## `leave`
+
+| Code | What it allows | Held by |
+|---|---|---|
+| `leave.application.create` | Apply for leave | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.application.view_self` | View own applications and balance history | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.application.withdraw` | Withdraw own pending application | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.application.cancel` | Request cancellation of approved leave | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.application.extend` | Request leave extension | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.application.resume` | Submit return to duty resumption | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.substitute.respond` | Accept or decline nominated responsibility | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.application.review` | Review and recommend leave requests | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `leave_admin`, `registrar`, `unit_head` |
+| `leave.application.sanction` | Sanction or reject leave requests | `Dean Academic`, `Dean Faculty`, `admin`, `dean`, `director`, `leave_admin`, `registrar` |
+| `leave.calendar.view` | View published holiday and RH calendars | `Dean Academic`, `Dean Faculty`, `HOD`, `admin`, `dean`, `deputy_registrar`, `director`, `faculty`, `leave_admin`, `registrar`, `staff`, `unit_head` |
+| `leave.calendar.manage` | Publish and edit holiday and RH calendars | `admin`, `leave_admin` |
+| `leave.calendar.vacation_sync` | Synchronize vacation periods from Academic Calendar | `academic_calendar`, `admin`, `leave_admin` |
+| `leave.admin.manage` | Manage leave policies, records, and offline entries | `admin`, `leave_admin` |
+
 ## `placement_cell`
 
 | Code | What it allows | Held by |
